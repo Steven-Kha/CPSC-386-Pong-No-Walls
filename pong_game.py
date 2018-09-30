@@ -23,7 +23,7 @@ import game_functions as gf
 def run_game():
     # Initialize game and create a screen object.
     pygame.init()
-    start_game = False
+    # start_game = False
     ai_settings = Settings()
 
     screen = pygame.display.set_mode(
@@ -33,8 +33,6 @@ def run_game():
     pygame.display.set_caption("Super Pong 64")
 
     start_game = False
-
-    screen.fill(ai_settings.start_color)
 
     stats = GameStats(ai_settings)
     sb = Scoreboard(ai_settings, screen, stats, "")
@@ -51,34 +49,12 @@ def run_game():
     bottom_right = Bottom_Right(ai_settings, screen)
     balls = Group()
 
-    while not start_game:
 
-        play_button = Button(ai_settings, screen, "Play")
+    play_button = Button(ai_settings, screen, "Play")
 
-        title.prep_title("PONG WITH NO WALLS! NANI??")
-        title.prep_rules("WIN 5 TO NEXT LEVEL - LOSE 5 GAME OVER!")
-
-        title.draw_button()
-
-        play_button.draw_button()
-
-        pygame.display.flip()
-
-        mouse_x = 0
-        mouse_y = 0
-
-        for event in pygame.event.get():
-            if event.type == pygame.MOUSEBUTTONDOWN:
-                mouse_x, mouse_y = pygame.mouse.get_pos()
-
-        button_clicked = play_button.rect.collidepoint(mouse_x, mouse_y)
-        if button_clicked and not start_game:
-            start_game = True
-
-        stats.game_active = True
 
     # Start the main loop for the game
-    while start_game:
+    while True:
         title.prep_title("")
         title.prep_rules("")
         gf.check_events(ai_settings, screen, stats, sb, play_button,
@@ -101,7 +77,7 @@ def run_game():
             gf.update_bottom_right(ai_settings, bottom_right)
             gf.update_right_paddle(ai_settings, right_paddle)
 
-        gf.update_screen(ai_settings, screen, stats, sb, left_paddle, right_paddle,
+        gf.update_screen(ai_settings, screen, stats, sb, title, left_paddle, right_paddle,
                  bottom_paddle, center_line, top_paddle, top_left, bottom_right,
                          balls, play_button)
 

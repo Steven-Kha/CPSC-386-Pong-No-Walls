@@ -36,4 +36,3 @@ class Title:
     def draw_button(self):
         self.screen.blit(self.title_image, self.title_rect)
         self.screen.blit(self.rules_image, self.rules_rect)
-        print("Yo are you there?")

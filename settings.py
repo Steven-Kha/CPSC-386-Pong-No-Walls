@@ -11,7 +11,7 @@ class Settings:
         self.start_color = (0, 0, 0)
 
         # ai_moves faster to ball
-        self.cpu_slow = 5
+        self.cpu_slow = 3
 
         # left paddle settings
         self.left_paddle_width = self.screen_width/32
@@ -26,13 +26,13 @@ class Settings:
         self.center_line_color = 255, 255, 255
 
         # bottom paddle settings
-        self.bottom_paddle_width = 800/2.5
+        self.bottom_paddle_width = self.screen_width/5
         self.bottom_paddle_height = self.screen_height / 32
         self.bottom_paddle_color = 0, 0, 255
         self.bottom_paddle_speed_factor = 2
         self.bottom_paddle_limit = 1
 
-        self.top_left_width = 800 / 2.5
+        self.top_left_width = self.screen_width/5
         self.top_left_height = self.screen_height / 32
         self.top_left_color = 0, 0, 255
         self.top_left_speed_factor = 2
@@ -42,7 +42,7 @@ class Settings:
         self.top_paddle_width = self.screen_width/5
         self.top_paddle_height = self.screen_height / 32
         self.top_paddle_color = 255,   0,   0
-        self.top_paddle_speed_factor = 2
+        self.top_paddle_speed_factor = 1
         self.top_paddle_limit = 1
         self.top_paddle_x_direction = 1
 
@@ -50,13 +50,13 @@ class Settings:
         self.bottom_right_width = self.screen_width/5
         self.bottom_right_height = self.screen_height / 32
         self.bottom_right_color = 255, 0, 0
-        self.bottom_right_speed_factor = 2
+        self.bottom_right_speed_factor = 1
         self.bottom_right_limit = 1
         self.bottom_right_x_direction = 1
 
         # right paddle settings
         self.right_paddle_width = self.screen_width / 32
-        self.right_paddle_height = self.screen_height / 6
+        self.right_paddle_height = self.screen_height / 3
         self.right_paddle_color = 255, 0, 0,
         self.right_paddle_speed_factor = 1.5
         self.right_paddle_limit = 1

@@ -40,14 +40,12 @@ class Right_Paddle(Sprite):
         # Update the ship's center value, not the rect.
         for ball in balls.sprites():
             if ball.rect.centerx > ai_settings.right_reflex:
-                if ball.rect.centery > self.rect.centery:
-                    if ai_settings.right_paddle_speed_factor < 2.3:
-                        self.y += (ai_settings.right_paddle_y_direction *
-                                   ai_settings.right_paddle_speed_factor)
-                else:
-                    if ai_settings.right_paddle_speed_factor < 2.3:
-                        self.y -= (ai_settings.right_paddle_y_direction *
-                                   ai_settings.right_paddle_speed_factor)
+                self.y += (ai_settings.right_paddle_y_direction *
+                           ai_settings.right_paddle_speed_factor/ ai_settings.cpu_slow)
+
+            else:
+                self.y -= (ai_settings.right_paddle_y_direction *
+                           ai_settings.right_paddle_speed_factor/ ai_settings.cpu_slow)
 
         self.rect.y = self.y
 

@@ -107,6 +107,7 @@ def update_balls(ai_settings, stats, screen, sb, left_paddle, right_paddle,
                 ai_settings.top_left_speed_factor = 2
                 ai_settings.bottom_right_speed_factor = 2
                 ai_settings.cpu_slow = 5
+                print("ball speed: " + str(ai_settings.ball_speed_factor))
                 stats.game_active = False
                 pygame.mouse.set_visible(True)
 
@@ -130,8 +131,8 @@ def update_balls(ai_settings, stats, screen, sb, left_paddle, right_paddle,
             balls.remove(ball)
             if stats.p1_score > 4:
 
-                if ai_settings.cpu_slow > 1.25:
-                    ai_settings.cpu_slow -= .25
+                if ai_settings.cpu_slow > 0:
+                    ai_settings.cpu_slow -= 1
                 stats.level += 1
                 sb.prep_p1_wins("P1 WINS!")
                 if stats.level % 5 == 0:
@@ -233,9 +234,9 @@ def check_play_button(ai_settings, screen, stats, sb, play_button,
         sb.prep_right_level()
         sb.prep_high_level()
 
-def update_screen(ai_settings, screen, stats, sb, title, left_paddle, right_paddle,
+def update_screen(ai_settings, screen, stats, sb, left_paddle, right_paddle,
                   bottom_paddle, center_line, top_paddle, top_left, bottom_right,
-                  balls, play_button):
+                  balls, play_button, title):
     # Redraw the screen during each pass through the loop.
 
     screen.fill(ai_settings.bg_color)
@@ -263,13 +264,24 @@ def update_screen(ai_settings, screen, stats, sb, title, left_paddle, right_padd
 
     # Draw the play button if the game is inactive.
     if not stats.game_active:
-        screen.fill(ai_settings.start_color)
         title.prep_title("PONG WITH NO WALLS! NANI??")
         title.prep_rules("WIN 5 TO NEXT LEVEL - LOSE 5 GAME OVER!")
+        screen.fill(ai_settings.start_color)
 
         title.draw_button()
-
         play_button.draw_button()
+
+        mouse_x = 0
+        mouse_y = 0
+
+        for event in pygame.event.get():
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                mouse_x, mouse_y = pygame.mouse.get_pos()
+
+        button_clicked = play_button.rect.collidepoint(mouse_x, mouse_y)
+
+        if button_clicked and not stats.game_active:
+            stats.game_active = True
 
     pygame.display.flip()
 

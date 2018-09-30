@@ -9,6 +9,7 @@ class GameStats:
 
         # Start game in an inactive state.
         self.game_active = False
+        self.start_game = False
 
         # When below wins, the message will display
         self.P1_WINS = False
