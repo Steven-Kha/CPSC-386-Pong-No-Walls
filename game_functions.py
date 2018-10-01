@@ -96,8 +96,16 @@ def update_balls(ai_settings, stats, screen, sb, left_paddle, right_paddle,
             stats.cpu_score += 1
             sb.prep_cpu_score()
             balls.remove(ball)
+            if stats.cpu_score > 3:
+                sb.prep_p1_wins("CPU wins at 5!")
+                pygame.time.delay(1000)
+                pygame.mixer.music.load('music\clock-chimes-daniel_simon.wav')
+                pygame.mixer.music.play()
             if stats.cpu_score > 4:
-                sb.prep_cpu_wins("CPU WINS!")
+
+                pygame.mixer.music.load('music\sos.wav')
+                pygame.mixer.music.play()
+
                 stats.cpu_score = 0
                 stats.p1_score = 0
                 stats.level = 1
@@ -222,7 +230,7 @@ def check_play_button(ai_settings, screen, stats, sb, play_button,
         # Reset the game statisitcs
         stats.reset_stats()
         stats.game_active = True
-
+        pygame.mixer_music.stop()
         # Reset the scoreboard images
         stats.cpu_score = 0
         stats.p1_score = 0
@@ -263,6 +271,8 @@ def update_screen(ai_settings, screen, stats, sb, title, left_paddle, right_padd
 
     # Draw the play button if the game is inactive.
     if not stats.game_active:
+        sb.prep_p1_wins("")
+        sb.prep_cpu_wins("CPU WINS!")
         screen.fill(ai_settings.start_color)
         title.prep_title("PONG WITH NO WALLS! NANI??")
         title.prep_rules("WIN 5 TO NEXT LEVEL - LOSE 5 GAME OVER!")
