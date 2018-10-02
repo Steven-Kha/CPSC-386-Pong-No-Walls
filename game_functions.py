@@ -171,12 +171,17 @@ def update_balls(ai_settings, stats, screen, sb, left_paddle, right_paddle,
     for ball in balls.sprites():
         if ball.collision_left_right(stats, sb, left_paddle, right_paddle):
             # print("it works - collided!")
+            # Slap-SoundMaster13-49669815
+            pygame.mixer.music.load('music\Slap-SoundMaster13-49669815.wav')
+            pygame.mixer.music.play()
             change_ball_direction_horizontal(ai_settings, balls)
 
 
     # chceck if ball hits the top or bottom paddle
     for ball in balls.sprites():
         if ball.collision_top_bottom(top_paddle, bottom_paddle, top_left, bottom_right):
+            pygame.mixer.music.load('music\Slap-SoundMaster13-49669815.wav')
+            pygame.mixer.music.play()
             change_ball_direction_vertical(ai_settings, balls)
 
 def check_keydown_events(event, ai_settings, screen, left_paddle,

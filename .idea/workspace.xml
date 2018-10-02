@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79dc4fbf-ef86-410e-9b6c-17ded2c3b862" name="Default Changelist" comment="Update Readme with rules">
-      <change afterPath="$PROJECT_DIR$/music/Slowed_Breathing-Kibblesbob-1806013479.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music/clock-chimes-daniel_simon.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music/sos.wav" afterDir="false" />
+    <list default="true" id="79dc4fbf-ef86-410e-9b6c-17ded2c3b862" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/game_functions.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,13 +47,13 @@
           <entry key="dummy" value="14" />
           <entry key="md" value="141" />
           <entry key="py" value="12864" />
-          <entry key="txt" value="31" />
+          <entry key="txt" value="75" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="141" />
-          <entry key="PLAIN_TEXT" value="45" />
+          <entry key="PLAIN_TEXT" value="89" />
           <entry key="Python" value="12864" />
         </counts>
       </usages-collector>
@@ -85,7 +80,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game_functions.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="81">
@@ -107,12 +102,12 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="238">
-                <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+              <first_editor relative-caret-position="204">
+                <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
               </first_editor>
               <second_editor />
             </state>
@@ -146,7 +141,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bottom_right.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
+            <state relative-caret-position="418">
               <caret line="42" column="59" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="59" />
             </state>
           </provider>
@@ -155,7 +150,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scoreboard.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="-425">
               <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
               <folding>
                 <marker date="1538285576106" expanded="true" signature="1104:1110" ph="..." />
@@ -180,7 +175,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>top_paddle_x_direction</find>
       <find>right_edges</find>
       <find>bottom_paddle</find>
       <find>top_paddle</find>
@@ -210,6 +204,7 @@
       <find>check_events</find>
       <find>cpu_slow</find>
       <find>check_play</find>
+      <find>&gt; 0</find>
     </findStrings>
     <replaceStrings>
       <replace>top_paddle</replace>
@@ -256,8 +251,8 @@
         <option value="$PROJECT_DIR$/top_paddle.py" />
         <option value="$PROJECT_DIR$/right_paddle.py" />
         <option value="$PROJECT_DIR$/settings.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/game_functions.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -381,25 +376,38 @@
       <option name="project" value="LOCAL" />
       <updated>1538345013704</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="game over music added">
+      <created>1538438057769</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1538438057770</updated>
+    </task>
+    <task id="LOCAL-00005" summary="game over music added">
+      <created>1538438193255</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1538438193255</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18175809" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32885906" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32885906" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32885906" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32885906" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32885906" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" />
@@ -442,7 +450,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update Readme with rules" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Readme with rules" />
+    <MESSAGE value="game over music added" />
+    <option name="LAST_COMMIT_MESSAGE" value="game over music added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -549,16 +558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="238">
-            <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/title.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -575,28 +574,6 @@
           <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
           <folding>
             <marker date="1538342636506" expanded="true" signature="1884:2010" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bottom_right.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="59" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scoreboard.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding>
-            <marker date="1538285576106" expanded="true" signature="1104:1110" ph="..." />
-            <marker date="1538285576106" expanded="true" signature="1138:1147" ph="..." />
-            <marker date="1538285576106" expanded="true" signature="1493:1842" ph="..." />
-            <marker date="1538285576106" expanded="true" signature="1836:1837" ph="..." />
-            <marker date="1538285576106" expanded="true" signature="4604:5457" ph="..." />
-            <marker date="1538285576106" expanded="true" signature="8600:8603" ph="..." />
           </folding>
         </state>
       </provider>
@@ -632,6 +609,38 @@
           <folding>
             <element signature="e#22#32#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scoreboard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-425">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding>
+            <marker date="1538285576106" expanded="true" signature="1104:1110" ph="..." />
+            <marker date="1538285576106" expanded="true" signature="1138:1147" ph="..." />
+            <marker date="1538285576106" expanded="true" signature="1493:1842" ph="..." />
+            <marker date="1538285576106" expanded="true" signature="1836:1837" ph="..." />
+            <marker date="1538285576106" expanded="true" signature="4604:5457" ph="..." />
+            <marker date="1538285576106" expanded="true" signature="8600:8603" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bottom_right.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="42" column="59" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="204">
+            <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
